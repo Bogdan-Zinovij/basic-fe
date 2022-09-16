@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Lab #2, Frontend basics" />
+    <meta name="keywords" content="HTML, CSS" />
+    <title>Зіновий Богдан ІП-04 Лаб-2 Варіант-59</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <style>
+      table {
+        width: 700px;
+      }
+
+      td {
+        text-align: center;
+      }
+
+      tr {
+        height: 30px;
+        font-size: 14pt;
+      }
+
+      td,
+      table {
+        border-collapse: collapse;
+        border: 2px solid black;
+      }
+
+      tr:first-child {
+        background-color: #598f8f;
+        color: rgb(255, 255, 255);
+        height: 30px;
+      }
+
+      tr:first-child:hover {
+        background-color: #ff9100;
+        color: black;
+      }
+
+      tr:nth-child(2) {
+        background-color: #f5f559;
+        color: black;
+      }
+
+      tr:nth-child(2):hover {
+        background-color: #009dff;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <p>Завдання №1</p>
+    <table>
+      <tr>
+        <td colspan="2" rowspan="2">Зіновий</td>
+        <td colspan="3">Богдан Олександрович</td>
+      </tr>
+      <tr>
+        <td rowspan="2">ІП-04</td>
+        <td rowspan="3">Лаб №2</td>
+        <td rowspan="3">Варіант 59</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+    <br />
+    <p>Завдання №2</p>
+    <div style="display: inline-block">
+      <p>Position:</p>
+      <div class="position">
+        <div class="rectangle"></div>
+        <div class="circle circle-position"></div>
+      </div>
+    </div>
+    <div style="display: inline-block">
+      <p>Transform:</p>
+      <div class="transform">
+        <div class="rectangle"></div>
+        <div class="circle transform-circle"></div>
+      </div>
+    </div>
+  </body>
+</html>

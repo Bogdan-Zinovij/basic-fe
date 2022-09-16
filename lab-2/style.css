@@ -1,0 +1,31 @@
+.position,
+.transform {
+  position: relative;
+  height: 100px;
+  width: 180px;
+  margin-right: 20px;
+}
+
+.rectangle {
+  width: 180px;
+  height: 100px;
+  background: white;
+  border: 2px solid gray;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: red;
+}
+
+.circle-position {
+  position: absolute;
+  left: 65px;
+  top: 25px;
+}
+
+.transform-circle {
+  transform: translate(65px, -75px);
+}
