@@ -1,0 +1,40 @@
+.button-container button {
+  color: black;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.button-container button:hover {
+  color: black;
+  background-color: pink;
+}
+
+.outer-img-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 40%;
+  gap: 10px;
+}
+
+.img-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.img-container a {
+  display: block;
+  width: 100%;
+}
+
+.img-container a img {
+  width: 100%;
+}
