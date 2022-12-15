@@ -1,0 +1,19 @@
+@import '../../sass/variables.scss';
+
+.logo-wrapper {
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: $screen-l) {
+    width: 120px;
+  }
+
+  @media (max-width: $screen-xs) {
+    width: 90px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
