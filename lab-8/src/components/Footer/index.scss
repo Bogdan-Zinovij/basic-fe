@@ -1,0 +1,112 @@
+@import '../../sass/variables.scss';
+
+.footer-section {
+  background-color: $dark-blue-100;
+
+  .footer-wrapper {
+    padding: 0 60px 40px 60px;
+    position: relative;
+    padding-top: 250px;
+
+    @media (max-width: $screen-l) {
+      padding: 0;
+      padding-top: 250px;
+      padding-bottom: 50px;
+    }
+  }
+
+  .form-widget-container {
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 0;
+  }
+
+  .logo-wrapper {
+    margin-bottom: 40px;
+    display: inline-block;
+
+    @media (max-width: $screen-s) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    .contacts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .location {
+        display: flex;
+        gap: 20px;
+
+        img {
+          align-self: flex-start;
+        }
+
+        p {
+          max-width: 340px;
+
+          @media (max-width: $screen-s) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .handles {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        & > div {
+          display: flex;
+          gap: 20px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .links {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+
+      .links-list {
+        list-style: none;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+
+        li {
+          align-self: flex-start;
+          display: inline-block;
+          cursor: pointer;
+          border-bottom: 1px solid transparent;
+          transition: border-bottom 0.2s;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+
+          &:hover {
+            font-weight: 700;
+            border-bottom: 1px solid #fff;
+          }
+
+          @media (max-width: $screen-s) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

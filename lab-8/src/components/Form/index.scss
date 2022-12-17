@@ -1,0 +1,77 @@
+@import '../../sass/variables.scss';
+
+.form-widget {
+  background-color: $dark-blue-300;
+  max-width: 860px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  padding: 55px 80px;
+  gap: 30px;
+
+  @media (max-width: $screen-md) {
+    padding: 55px 40px;
+  }
+
+  @media (max-width: $screen-s) {
+    padding: 45px 30px;
+    max-width: initial;
+    width: 100%;
+    gap: 25px;
+  }
+
+  .title {
+    font-size: 32px;
+    text-align: center;
+
+    @media (max-width: $screen-s) {
+      font-size: 20px;
+    }
+  }
+
+  .desc {
+    text-align: center;
+
+    @media (max-width: $screen-s) {
+      font-size: 14px;
+    }
+  }
+
+  form {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
+
+    input[type='email'] {
+      background-color: #fff;
+      border: none;
+      font-size: 16px;
+      flex: 0.7;
+      padding: 15px 30px;
+      border-radius: 100px;
+      outline: none;
+
+      @media (max-width: $screen-s) {
+        font-size: 11px;
+      }
+
+      &::placeholder {
+        color: #c2c2c2;
+      }
+    }
+
+    .btn-primary {
+      flex: 0.3;
+
+      @media (max-width: $screen-md) {
+        flex: 1;
+        max-width: initial;
+      }
+    }
+  }
+}
