@@ -1,0 +1,29 @@
+@import '../../sass/variables.scss';
+
+.btn-primary {
+  border: none;
+  background: linear-gradient(to right, $cyan, $blue);
+  font-size: 16px;
+  color: #fff;
+  padding: 17px 15px;
+  max-width: 275px;
+  border-radius: 100px;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(2px);
+    background: linear-gradient(
+      to right,
+      hsl(176, 71%, 75%),
+      hsl(176, 71%, 75%)
+    );
+  }
+
+  @media (max-width: $screen-s) {
+    max-width: 200px;
+    padding: 12px 15px;
+    font-size: 14px;
+  }
+}
