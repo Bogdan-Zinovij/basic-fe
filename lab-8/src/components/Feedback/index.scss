@@ -1,0 +1,95 @@
+@import '../../sass/variables.scss';
+
+.feedback-section {
+  background-color: $dark-blue-200;
+  padding-top: 170px;
+  padding-bottom: 345px;
+
+  .feedback-wrapper {
+    padding: 0 103px;
+
+    @media (max-width: $screen-xl) {
+      padding: 0;
+    }
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @media (max-width: $screen-l) {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .feedback-card {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      background-color: $dark-blue-400;
+      padding: 40px 25px 25px 25px;
+      border-radius: 5px;
+      position: relative;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+
+      &:first-child::before {
+        content: '';
+        width: 55px;
+        height: 45px;
+        position: absolute;
+        top: -35px;
+        left: -10px;
+        background-image: url('../../images/bg-quotes.png');
+        background-repeat: no-repeat;
+
+        @media (max-width: $screen-s) {
+          width: 35px;
+          height: 25px;
+          background-size: contain;
+          top: -15px;
+          left: -5px;
+        }
+      }
+
+      .feedback-content {
+        @media (max-width: $screen-s) {
+          font-size: 14px;
+        }
+      }
+
+      .feedback-profile {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+
+        .user-info {
+          .position {
+            font-size: 9px;
+          }
+
+          .name {
+            font-size: 10px;
+            font-weight: 700;
+            margin-bottom: 3px;
+          }
+        }
+
+        .user-img-wrapper {
+          width: 25px;
+          height: 25px;
+          border-radius: 100px;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
