@@ -1,0 +1,61 @@
+@import '../../sass/variables.scss';
+
+.features {
+  &-section {
+    background-color: $dark-blue-200;
+    padding-top: 67px;
+  }
+
+  &-list {
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    column-gap: 100px;
+    row-gap: 90px;
+
+    @media (max-width: $screen-l) {
+      max-width: 700px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    @media (max-width: $screen-s) {
+      max-width: 400px;
+      grid-template-columns: minmax(150px, 250px);
+      justify-content: center;
+      text-align: center;
+    }
+
+    .features-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .icon {
+        margin-bottom: 20px;
+
+        @media (max-width: $screen-s) {
+          width: 60px;
+
+          img {
+            width: 100%;
+          }
+        }
+      }
+
+      .title {
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+
+      .desc {
+        text-align: center;
+        @media (max-width: $screen-s) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
