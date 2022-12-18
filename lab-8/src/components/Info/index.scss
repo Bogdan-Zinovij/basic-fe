@@ -1,0 +1,93 @@
+@import '../../sass/variables.scss';
+
+.info {
+  &-section {
+    background-color: $dark-blue-200;
+    padding-top: 140px;
+  }
+
+  &-wrapper {
+    padding: 0 103px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+
+    @media (max-width: $screen-l) {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  &-img-wrapper {
+    flex: 53%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-text {
+    flex: 47%;
+
+    .desc {
+      text-align: center;
+      @media (max-width: $screen-s) {
+        font-size: 14px;
+      }
+    }
+
+    h3 {
+      font-size: 40px;
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-s) {
+        br {
+          display: none;
+        }
+
+        font-size: 19px;
+        margin-bottom: 20px;
+      }
+    }
+
+    p {
+      font-size: 17px;
+      margin-bottom: 20px;
+
+      @media (max-width: $screen-s) {
+        font-size: 15px;
+      }
+    }
+
+    .see-more-link {
+      font-size: 17px;
+
+      &:link,
+      &:visited {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 10px;
+        color: $cyan;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $cyan;
+      }
+
+      svg {
+        transition: margin-left 0.2s;
+      }
+
+      &:hover {
+        color: hsl(176, 68%, 64%, 0.7);
+
+        svg {
+          margin-left: 10px;
+        }
+      }
+
+      @media (max-width: $screen-s) {
+        font-size: 14px;
+      }
+    }
+  }
+}
